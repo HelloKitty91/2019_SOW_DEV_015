@@ -31,4 +31,9 @@ public class LeapYearTest {
         assertTrue(isLeapYear(2008));
     }
 
+    @Test
+    public void test_isLeapYear_whenNotDivisibleBy4_shouldReturnFalse(){
+        assertFalse(isLeapYear(2019));
+    }
+
 }
