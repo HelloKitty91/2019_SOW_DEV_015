@@ -11,4 +11,11 @@ public class LeapYearTest {
         assertTrue(isLeap);
     }
 
+    @Test
+    public void test_isLeapYear_whenDivisibleBy100ButNotBy400_shouldReturnFalse(){
+        LeapYear leapYear = new LeapYear();
+        Boolean isLeap = leapYear.isLeapYear(2100);
+        assertFalse(isLeap);
+    }
+
 }
