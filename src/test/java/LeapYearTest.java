@@ -43,4 +43,8 @@ public class LeapYearTest {
         assertFalse(isLeapYear(Year.of(16000)));
     }
 
+    @Test
+    public void test_isLeapYear_forInvalidYearLike0_shouldReturnFalse(){
+        assertFalse(isLeapYear(Year.of(0)));
+    }
 }
