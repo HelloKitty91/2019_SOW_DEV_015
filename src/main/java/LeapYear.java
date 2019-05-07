@@ -1,7 +1,9 @@
 public class LeapYear {
 
+    public static final int GREGORIAN_CALENDAR_INTRODUCED_YEAR = 1582;
+
     public boolean isLeapYear(Integer year){
-        if(year<1582){
+        if(year < GREGORIAN_CALENDAR_INTRODUCED_YEAR){
             return false;
         }else
             return ((isMultipleOf400(year) && !isMultipleOf4000(year)) || (isMultipleOf4(year) && !isMultipleOf100(year) && !isMultipleOf4000(year)));
