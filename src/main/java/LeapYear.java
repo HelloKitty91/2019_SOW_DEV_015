@@ -4,6 +4,9 @@ public class LeapYear {
 
     public boolean isLeapYear(Year year){
         int integerValueOfYear = Integer.parseInt(String.valueOf(year));
+        if(integerValueOfYear<1582){
+            return false;
+        }
         return ((isMultipleOf400(integerValueOfYear) && !isMultipleOf4000(integerValueOfYear)) || (isMultipleOf4(integerValueOfYear) && !isMultipleOf100(integerValueOfYear) && !isMultipleOf4000(integerValueOfYear)));
     }
 
