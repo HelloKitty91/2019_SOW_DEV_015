@@ -4,15 +4,14 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
-
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
 public class LeapYearTest {
 
     private LeapYear leapYear;
-    private Boolean expectedResult;
-    private Integer year;
+    private Boolean  expectedResult;
+    private Integer  year;
 
     @Before
     public void setUp() throws Exception{

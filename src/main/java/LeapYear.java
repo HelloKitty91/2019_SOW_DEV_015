@@ -3,8 +3,8 @@ public class LeapYear {
     public boolean isLeapYear(Integer year){
         if(year<1582){
             return false;
-        }
-        return ((isMultipleOf400(year) && !isMultipleOf4000(year)) || (isMultipleOf4(year) && !isMultipleOf100(year) && !isMultipleOf4000(year)));
+        }else
+            return ((isMultipleOf400(year) && !isMultipleOf4000(year)) || (isMultipleOf4(year) && !isMultipleOf100(year) && !isMultipleOf4000(year)));
     }
 
     private boolean isMultipleOf4(Integer year) {
